@@ -4,3 +4,6 @@
 
 * **[Ghjulia Sialelli] (github.com/ghjuliasialelli)**
   * Gathering data team
+
+* **[Yassine Marrakchi] (github.com/yassine280)**
+  * Gathering data team
