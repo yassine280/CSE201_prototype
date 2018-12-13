@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+
+int main ()
+{
+  std::string str="maria a mangé des tomates arXiv:xxxx.xxxxxx";
+
+  std::size_t pos1 = str.find("arXiv:");    
+  std::string strl = str.substr(pos1);
+  std::string strf = strl.substr(0,15);
+  std::cout << strf << std::endl;
+
+  return 0;
+}
