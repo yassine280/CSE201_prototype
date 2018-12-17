@@ -63,6 +63,31 @@ class References {
      * 
      * The constructor ensures that the object may be iterated over and
      * immediately yield all found references in ``paper``.
+     
+   Yassine Marakchi and Maria benkhadra
      */
+    
+    
+    
+    
+#include <iostream>
+#include <string>
+#include <vector>
+
+{
+  std::vector<std::string> seen;
+  std::string str="our script arXiv:xxxx.xxxxxx puis our script2 arXiv:xxxx.bbbbbb";
+  
+  while (true){
+      int pos = str.find("arXiv:");
+      if (pos == std::string::npos ){
+          break;
+      }
+   seen.push_back(str.substr(pos, 17));
+      str = str.substr(pos + 17);
+  }
+std::cout << seen[1];  /*seen is our vector with all the refrences, in this case it prints the second reference*/
+  return 0;
+}
     References(Paper paper);
 };
